@@ -3,6 +3,7 @@ package pe.idat.g7.appclinicaec2grupo7.commom
 import android.view.View
 import androidx.core.content.ContextCompat
 import com.google.android.material.snackbar.Snackbar
+import pe.idat.g7.appclinicaec2grupo7.R
 
 object AppMensaje {
 
@@ -11,9 +12,12 @@ object AppMensaje {
         val snackbarView: View = snackbar.view
         if(tipo == TipoMensaje.ERROR){
             snackbarView.setBackgroundColor(
-                ContextCompat.getColor(MiApp.instance)
+                ContextCompat.getColor(MiApp.instance, R.color.snackbarerror)
             )
         }else{
+            snackbarView.setBackgroundColor(
+                ContextCompat.getColor(MiApp.instance, R.color.snackbarsuccess)
+            )
 
         }
         snackbar.show()

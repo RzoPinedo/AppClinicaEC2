@@ -3,15 +3,15 @@ package pe.idat.g7.appclinicaec2grupo7
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import pe.idat.g7.appclinicaec2grupo7.databinding.ActivityMainBinding
+import pe.idat.g7.appclinicaec2grupo7.databinding.ActivityRegistroBinding
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener{
 
-    private lateinit var binding: RegisterActivityBinding
+    private lateinit var binding: ActivityRegistroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = RegisterActivityBinding.inflate(layoutInflater)
+        binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
     }

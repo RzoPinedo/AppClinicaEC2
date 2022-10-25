@@ -15,20 +15,38 @@ class MainActivity : AppCompatActivity(), View.OnClickListener{
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
     }
 
 
     override fun onClick(p0: View?) {
 
-        R.id.btnRegistro-> Registrar()
+
 
 
     }
 
-    override fun Registrar(view: View){
-        val intentLista= Intent(
+    public fun Registrar(view: View){
+        val intentRegistrar= Intent(
             this,RegisterActivity::class.java
-        ).apply {  }
+        )
+
+        startActivity(intentRegistrar)
+
+    }
+
+    public fun Formulario(view: View){
+        val intentFormulario= Intent(
+            this,FormularioActivity::class.java
+        )
+
+        startActivity(intentFormulario)
+
+    }
+    public fun Listar (view: View){
+        val intentLista= Intent(
+            this,ListaActivity::class.java
+        )
 
         startActivity(intentLista)
 
